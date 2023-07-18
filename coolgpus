@@ -17,8 +17,8 @@ are a lot more distracting than steady fan noise.
 I can't claim it's optimal, but it Works For My Machine (TM). Full load is about
 75C and 80%.
 ''')
-parser.add_argument('--temp', nargs='+', default=[55, 80], type=float, help='The temperature ranges where the fan speed will increase linearly')
-parser.add_argument('--speed', nargs='+', default=[30, 99], type=float, help='The fan speed ranges')
+parser.add_argument('--temp', nargs='+', default=[50, 80], type=float, help='The temperature ranges where the fan speed will increase linearly')
+parser.add_argument('--speed', nargs='+', default=[45, 99], type=float, help='The fan speed ranges')
 parser.add_argument('--hyst', nargs='?', default=2, type=float, help='The hysteresis gap. Large gaps will reduce how often the fan speed is changed, but might mean the fan runs faster than necessary')
 parser.add_argument('--kill', action='store_true', default=False, help='Whether to kill existing Xorg sessions')
 parser.add_argument('--verbose', action='store_true', default=False, help='Whether to print extra debugging information')
